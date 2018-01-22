@@ -17,11 +17,19 @@ public class AirQualityContainer {
 
     public class HistoricalAirQualityContainer {
         private Date fromDateTime;
-        private Date toDateTime;
+        private Date tillDateTime;
         private AirQuality measurements;
 
         public AirQuality getMeasurements() {
             return measurements;
+        }
+
+        public Date getFromDateTime() {
+            return fromDateTime;
+        }
+
+        public Date getTillDateTime() {
+            return tillDateTime;
         }
     }
 

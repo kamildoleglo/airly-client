@@ -11,7 +11,8 @@ public class APIClient {
     private final String _APIKey;
     private final String _APIURL = "https://airapi.airly.eu";
     private final String _APIMapPointURL = "/v1/mapPoint/measurements";
-    private final String _APISensorURL = "/v1/nearestSensor/measurements";
+    private final String _APINearestSensorURL = "/v1/nearestSensor/measurements";
+    private final String _APISensorURL = "/v1/sensor/measurements";
 
     public APIClient(String _APIKey) {
         this._APIKey = _APIKey;
@@ -41,26 +42,11 @@ public class APIClient {
         }
     }
 
-    /*
-        public void test() throws URISyntaxException {
-            URI address = new URI(_APIURL + _APIMapPointURL + "?" + API_PARAM.LAT.toString("50.06201") + "&" + API_PARAM.LONG.toString("19.94098") + "&" + API_PARAM.API_KEY.toString(this._APIKey));
-            System.out.println(address.toString());
-            AirQualityContainer container = null;
-            try {
-                container = getMeasurementsForPointOnMap("50.06201", "19.94098");
-            } catch (IOException e) {
-                System.out.println("EXCEPTION OCCURED");
-                e.printStackTrace();
-            }
-            System.out.println(container.getCurrentMeasurements().getAirQualityIndex());
-            System.out.println(container.getHistory().get(0).getMeasurements().getAirQualityIndex());
-        }
-    */
-    public AirQualityContainer getMeasurementsForPointOnMap(String latitude, String longitude) throws IOException {
+    public AirQualityContainer getMeasurementsForPointOnMap(String latitude, String longitude) throws IOException, IllegalAccessException {
         return this.getMeasurementsForPointOnMap(latitude, longitude, false);
     }
 
-    public AirQualityContainer getMeasurementsForPointOnMap(String latitude, String longitude, Boolean interpolated) throws IOException {
+    public AirQualityContainer getMeasurementsForPointOnMap(String latitude, String longitude, Boolean interpolated) throws IOException, IllegalAccessException {
         AirQuality sensorData = getNearestSensorData(latitude, longitude);
         if (sensorData.getId() == null) {
             throw new NullPointerException("No sensor found nearby");
@@ -74,13 +60,13 @@ public class APIClient {
         return pointData;
     }
 
-    public AirQualityContainer getMeasurementsForSensor(String sensorId) throws IOException {
+    public AirQualityContainer getMeasurementsForSensor(String sensorId) throws IOException, IllegalAccessException {
         String response = sendGET(buildURL(this._APISensorURL, new String[]{API_PARAM.SENSOR_ID.toString(sensorId)}));
         return new Gson().fromJson(response, AirQualityContainer.class);
     }
 
-    private AirQuality getNearestSensorData(String latitude, String longitude) throws IOException {
-        String response = sendGET(buildURL(this._APISensorURL, new String[]{API_PARAM.LAT.toString(latitude), API_PARAM.LONG.toString(longitude)}));
+    private AirQuality getNearestSensorData(String latitude, String longitude) throws IOException, IllegalAccessException {
+        String response = sendGET(buildURL(this._APINearestSensorURL, new String[]{API_PARAM.LAT.toString(latitude), API_PARAM.LONG.toString(longitude)}));
         return new Gson().fromJson(response, AirQuality.class);
     }
 
@@ -102,16 +88,17 @@ public class APIClient {
         return _URI.toString();
     }
 
-    private String sendGET(URL query) throws IOException {
+    private String sendGET(URL query) throws IOException, IllegalAccessException {
 
         HttpURLConnection con = (HttpURLConnection) query.openConnection();
         con.setRequestMethod("GET");
         con.setRequestProperty("Content-Type", "application/json");
         int status = con.getResponseCode();
+        if(status == 401) throw new IllegalAccessException("Unauthorized");
         BufferedReader in = new BufferedReader(
                 new InputStreamReader(con.getInputStream()));
         String inputLine;
-        StringBuffer content = new StringBuffer();
+        StringBuilder content = new StringBuilder();
         while ((inputLine = in.readLine()) != null) {
             content.append(inputLine);
         }

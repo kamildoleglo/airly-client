@@ -62,4 +62,8 @@ public class AirQuality {
         }
         return this;
     }
+
+    public boolean isNull() {
+        return this.airQualityIndex == null;
+    }
 }
