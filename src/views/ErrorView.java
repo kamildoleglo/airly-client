@@ -7,7 +7,7 @@ public class ErrorView {
     }
 
     public enum Type {
-        MALFORMED_API_KEY, API_KEY_NOT_PRESENT, NETWORK, MALFORMED_ARGS, INCORRECT_COORDS, INCORRECT_SENSOR;
+        MALFORMED_API_KEY, API_KEY_NOT_PRESENT, NETWORK, MALFORMED_ARGS, INCORRECT_COORDS, INCORRECT_SENSOR, NO_SENSOR_FOUND;
 
         public String toString() {
             switch (this) {
@@ -23,6 +23,8 @@ public class ErrorView {
                     return "Niepoprawne koordynaty";
                 case INCORRECT_SENSOR:
                     return "Niepoprawny numer sensora";
+                case NO_SENSOR_FOUND:
+                    return "Nie znaleziono sensora w pobliżu";
                 default:
                     return "";
             }

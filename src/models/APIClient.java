@@ -1,6 +1,7 @@
 package models;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonSyntaxException;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -62,7 +63,13 @@ public class APIClient {
 
     public AirQualityContainer getMeasurementsForSensor(String sensorId) throws IOException, IllegalAccessException {
         String response = sendGET(buildURL(this._APISensorURL, new String[]{API_PARAM.SENSOR_ID.toString(sensorId)}));
-        return new Gson().fromJson(response, AirQualityContainer.class);
+        AirQualityContainer container;
+        try {
+            container = new Gson().fromJson(response, AirQualityContainer.class);
+        }catch (JsonSyntaxException e){
+            throw new IllegalArgumentException("Bad sensor number");
+        }
+        return container;
     }
 
     private AirQuality getNearestSensorData(String latitude, String longitude) throws IOException, IllegalAccessException {

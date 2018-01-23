@@ -82,11 +82,16 @@ public class ApplicationController {
             }
 
         } catch (IOException e) {
-            e.printStackTrace();
             new ErrorView(ErrorView.Type.NETWORK);
             System.exit(1);
         } catch (IllegalAccessException e) {
             new ErrorView(ErrorView.Type.MALFORMED_API_KEY);
+            System.exit(1);
+        } catch (NullPointerException e ){
+            new ErrorView(ErrorView.Type.NO_SENSOR_FOUND);
+            System.exit(1);
+        }catch (IllegalArgumentException e){
+            new ErrorView(ErrorView.Type.INCORRECT_SENSOR);
             System.exit(1);
         }
         System.exit(0);

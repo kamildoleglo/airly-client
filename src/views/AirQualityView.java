@@ -16,7 +16,7 @@ public class AirQualityView {
         if (data.isNull()) return;
         String[] art = AsciiArtHelper.getAsciiArt(data.getPollutionLevel());
         AirQualityHelper.Pair pair = AirQualityHelper.getAirQualityData(data);
-        int maxLength = 0;
+        int maxLength = 1;
         for (String line : art) {
             if (line.length() > maxLength) {
                 maxLength = line.length();
@@ -51,8 +51,7 @@ public class AirQualityView {
             }
             AirQualityHelper.printHashLine();
             System.out.println("Dane od: " + df.format(container.getFromDateTime()));
-            System.out.println("Dane do: " + df.format(container.getTillDateTime()));
-            System.out.println();
+            System.out.println("Dane do: " + df.format(container.getTillDateTime()) + "\r\n");
             printAirQuality(container.getMeasurements());
         }
     }

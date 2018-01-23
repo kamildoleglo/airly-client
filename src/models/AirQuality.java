@@ -50,7 +50,7 @@ public class AirQuality {
         return address;
     }
 
-    public AirQuality merge(AirQuality that) {
+    public void merge(AirQuality that) {
         Field[] fields = AirQuality.class.getDeclaredFields();
         try {
             for (Field field : fields) {
@@ -60,7 +60,6 @@ public class AirQuality {
             }
         } catch (IllegalAccessException e) {
         }
-        return this;
     }
 
     public boolean isNull() {
