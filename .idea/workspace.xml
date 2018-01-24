@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2e550451-2b94-46f2-a16f-3ee07d749b78" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/airly-client/models/APIClient.class" afterPath="$PROJECT_DIR$/out/production/airly-client/models/APIClient.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/airly-client/models/AirQuality.class" afterPath="$PROJECT_DIR$/out/production/airly-client/models/AirQuality.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/airly-client/views/AirQualityView.class" afterPath="$PROJECT_DIR$/out/production/airly-client/views/AirQualityView.class" />
       <change beforePath="$PROJECT_DIR$/src/controllers/ApplicationController.java" afterPath="$PROJECT_DIR$/src/controllers/ApplicationController.java" />
       <change beforePath="$PROJECT_DIR$/src/models/APIClient.java" afterPath="$PROJECT_DIR$/src/models/APIClient.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/AirQuality.java" afterPath="$PROJECT_DIR$/src/models/AirQuality.java" />
       <change beforePath="$PROJECT_DIR$/src/views/AirQualityView.java" afterPath="$PROJECT_DIR$/src/views/AirQualityView.java" />
-      <change beforePath="$PROJECT_DIR$/src/views/ErrorView.java" afterPath="$PROJECT_DIR$/src/views/ErrorView.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,92 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AirQualityContainer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/AirQualityContainer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#248#249#0" expanded="true" />
-                <element signature="e#290#291#0" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
-                <element signature="e#383#384#0" expanded="true" />
-                <element signature="e#591#592#0" expanded="true" />
-                <element signature="e#634#635#0" expanded="true" />
-                <element signature="e#675#676#0" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
-                <element signature="e#759#760#0" expanded="true" />
-                <element signature="e#802#803#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AirQuality.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/AirQuality.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="52" column="40" lean-forward="true" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
-                <element signature="e#453#454#0" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#511#512#0" expanded="true" />
-                <element signature="e#542#543#0" expanded="true" />
-                <element signature="e#569#570#0" expanded="true" />
-                <element signature="e#604#605#0" expanded="true" />
-                <element signature="e#635#636#0" expanded="true" />
-                <element signature="e#670#671#0" expanded="true" />
-                <element signature="e#701#702#0" expanded="true" />
-                <element signature="e#739#740#0" expanded="true" />
-                <element signature="e#773#774#0" expanded="true" />
-                <element signature="e#803#804#0" expanded="true" />
-                <element signature="e#828#829#0" expanded="true" />
-                <element signature="e#870#871#0" expanded="true" />
-                <element signature="e#907#908#0" expanded="true" />
-                <element signature="e#954#955#0" expanded="true" />
-                <element signature="e#984#985#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicationController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controllers/ApplicationController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-475">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="APIClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/APIClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-281">
-              <caret line="72" column="5" lean-forward="true" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-              <folding>
-                <marker date="1516703650785" expanded="true" signature="4156:4352" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AirQualityView.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/views/AirQualityView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="54" column="57" lean-forward="true" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -136,14 +52,14 @@
         <option value="$PROJECT_DIR$/src/assets/high" />
         <option value="$PROJECT_DIR$/src/assets/low" />
         <option value="$PROJECT_DIR$/src/assets/extremal" />
-        <option value="$PROJECT_DIR$/src/models/AirQualityContainer.java" />
         <option value="$PROJECT_DIR$/src/views/AirQualityHelper.java" />
         <option value="$PROJECT_DIR$/src/views/AsciiArtHelper.java" />
         <option value="$PROJECT_DIR$/src/views/ErrorView.java" />
-        <option value="$PROJECT_DIR$/src/models/APIClient.java" />
-        <option value="$PROJECT_DIR$/src/controllers/ApplicationController.java" />
         <option value="$PROJECT_DIR$/src/models/AirQuality.java" />
+        <option value="$PROJECT_DIR$/src/models/AirQualityContainer.java" />
         <option value="$PROJECT_DIR$/src/views/AirQualityView.java" />
+        <option value="$PROJECT_DIR$/src/controllers/ApplicationController.java" />
+        <option value="$PROJECT_DIR$/src/models/APIClient.java" />
       </list>
     </option>
   </component>
@@ -174,9 +90,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -222,7 +135,10 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -273,7 +189,7 @@
       </extension>
       <option name="MAIN_CLASS_NAME" value="controllers.ApplicationController" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="-a &quot;63238849a08049fc841a11d84db77ef7&quot; -lat 50.26111 -lon 18.57322 -h" />
+      <option name="PROGRAM_PARAMETERS" value="-a &quot;63238849a08049fc841a11d84db77ef7&quot; -lat 50.06448 -lon 19.93176 -h" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -394,11 +310,14 @@
       <workItem from="1516625111219" duration="95000" />
       <workItem from="1516627109783" duration="170000" />
       <workItem from="1516702614432" duration="2103000" />
+      <workItem from="1516705114636" duration="12000" />
+      <workItem from="1516735911730" duration="1755000" />
+      <workItem from="1516792716327" duration="312000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41078000" />
+    <option name="totallyTimeSpent" value="43157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
@@ -412,11 +331,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31296572" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29210135" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -475,9 +394,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <marker date="1516703650785" expanded="true" signature="4156:4352" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -541,9 +458,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <marker date="1516703650785" expanded="true" signature="4156:4352" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -615,9 +530,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <marker date="1516703650785" expanded="true" signature="4156:4352" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -683,9 +596,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <marker date="1516703650785" expanded="true" signature="4156:4352" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -749,9 +660,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <marker date="1516703650785" expanded="true" signature="4156:4352" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -815,9 +724,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <marker date="1516703650785" expanded="true" signature="4156:4352" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -881,9 +788,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1516703650785" expanded="true" signature="4156:4352" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -919,9 +824,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1516703650785" expanded="true" signature="4156:4352" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -957,9 +860,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1516703650785" expanded="true" signature="4156:4352" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1003,48 +904,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/extremal" />
-    <entry file="file://$PROJECT_DIR$/src/views/AirQualityHelper.java" />
-    <entry file="file://$PROJECT_DIR$/src/views/AsciiArtHelper.java" />
-    <entry file="file://$PROJECT_DIR$/src/models/AirQualityContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#675#676#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/ErrorView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="62" lean-forward="false" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/ApplicationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-475">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/AirQuality.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="52" column="40" lean-forward="true" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+        <state relative-caret-position="283">
+          <caret line="52" column="40" lean-forward="false" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#415#416#0" expanded="true" />
@@ -1071,19 +934,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/APIClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-281">
-          <caret line="72" column="5" lean-forward="true" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-          <folding>
-            <marker date="1516703650785" expanded="true" signature="4156:4352" ph="{...}" />
-          </folding>
+        <state relative-caret-position="-139">
+          <caret line="79" column="85" lean-forward="false" selection-start-line="79" selection-start-column="85" selection-end-line="79" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/AirQualityHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/AsciiArtHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/ErrorView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="62" lean-forward="false" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/AirQualityView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="54" column="57" lean-forward="true" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
+        <state relative-caret-position="164">
+          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/ApplicationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1683">
+          <caret line="106" column="23" lean-forward="false" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/AirQualityContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

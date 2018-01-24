@@ -45,6 +45,7 @@ public class AirQualityView {
         AirQualityHelper.printHashLine();
         System.out.println("Dane historyczne:");
         List<AirQualityContainer.HistoricalAirQualityContainer> historicalDataContainers = data.getHistory();
+        Collections.reverse(historicalDataContainers);
         for (AirQualityContainer.HistoricalAirQualityContainer container : historicalDataContainers) {
             if (container.getMeasurements() == null) {
                 continue;

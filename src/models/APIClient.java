@@ -66,7 +66,7 @@ public class APIClient {
         AirQualityContainer container;
         try {
             container = new Gson().fromJson(response, AirQualityContainer.class);
-        }catch (JsonSyntaxException e){
+        } catch (JsonSyntaxException e) {
             throw new IllegalArgumentException("Bad sensor number");
         }
         return container;
@@ -78,7 +78,6 @@ public class APIClient {
     }
 
     private URL buildURL(String path, String[] params) throws MalformedURLException {
-
         return new URL(this._APIURL + path + addParams(params));
     }
 
@@ -101,7 +100,7 @@ public class APIClient {
         con.setRequestMethod("GET");
         con.setRequestProperty("Content-Type", "application/json");
         int status = con.getResponseCode();
-        if(status == 401) throw new IllegalAccessException("Unauthorized");
+        if (status == 401) throw new IllegalAccessException("Unauthorized");
         BufferedReader in = new BufferedReader(
                 new InputStreamReader(con.getInputStream()));
         String inputLine;

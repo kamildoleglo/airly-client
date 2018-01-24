@@ -13,22 +13,7 @@ import org.apache.commons.cli.*;
 public class ApplicationController {
     public static void main(String[] args) {
 
-        Options options = new Options();
-
-        Option apiKey = new Option("a", "api-key", true, "API key");
-        options.addOption(apiKey);
-
-        Option latitude = new Option("lat", "latitude", true, "latitude");
-        options.addOption(latitude);
-
-        Option longitude = new Option("lon", "longitude", true, "longitude");
-        options.addOption(longitude);
-
-        Option sensor = new Option("s", "sensor-id", true, "specific sensor id");
-        options.addOption(sensor);
-
-        Option history = new Option("h", "history", false, "show historical measurements");
-        options.addOption(history);
+        Options options = ApplicationController.programOptions();
 
         CommandLineParser parser = new DefaultParser();
         HelpFormatter formatter = new HelpFormatter();
@@ -42,12 +27,15 @@ public class ApplicationController {
             System.exit(1);
             return;
         }
+
+
         String _API_key = cmd.hasOption("api-key") ? cmd.getOptionValue("api-key") : System.getenv("API_KEY");
         if (_API_key == null) {
             new ErrorView(ErrorView.Type.API_KEY_NOT_PRESENT);
             System.exit(1);
             return;
         }
+
 
         try {
             APIClient client = new APIClient(_API_key);
@@ -87,13 +75,35 @@ public class ApplicationController {
         } catch (IllegalAccessException e) {
             new ErrorView(ErrorView.Type.MALFORMED_API_KEY);
             System.exit(1);
-        } catch (NullPointerException e ){
+        } catch (NullPointerException e) {
             new ErrorView(ErrorView.Type.NO_SENSOR_FOUND);
             System.exit(1);
-        }catch (IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             new ErrorView(ErrorView.Type.INCORRECT_SENSOR);
             System.exit(1);
         }
         System.exit(0);
+    }
+
+
+    public static Options programOptions() {
+
+        Options options = new Options();
+
+        Option apiKey = new Option("a", "api-key", true, "API key");
+        options.addOption(apiKey);
+
+        Option latitude = new Option("lat", "latitude", true, "latitude");
+        options.addOption(latitude);
+
+        Option longitude = new Option("lon", "longitude", true, "longitude");
+        options.addOption(longitude);
+
+        Option sensor = new Option("s", "sensor-id", true, "specific sensor id");
+        options.addOption(sensor);
+
+        Option history = new Option("h", "history", false, "show historical measurements");
+        options.addOption(history);
+        return options;
     }
 }
