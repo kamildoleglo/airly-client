@@ -57,6 +57,7 @@ public class ApplicationController {
                 }
             } else {
                 new ErrorView(ErrorView.Type.MALFORMED_ARGS);
+                formatter.printHelp("airly-client", options);
                 System.exit(1);
                 return;
             }
